@@ -6,6 +6,7 @@ RUN apt-get update
 RUN apt-get install -q -y openjdk-6-jre
 RUN apt-get install -q -y openjdk-6-jdk
 RUN apt-get install -q -y vim
+RUN apt-get install -q -y openssh-server
 RUN apt-get install -q -y git
 RUN mkdir /var/run/sshd
 RUN echo 'root:docker' | chpasswd
